@@ -1,0 +1,261 @@
+<html>
+ <head>
+  <title>
+   add rentals
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .sidebar {
+            width: 250px;
+            background-color:#fff;
+            color:#000;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px 20px;
+            cursor: pointer;
+        }
+        .sidebar ul li:hover, .sidebar ul li.active {
+            background-color: #444;
+        }
+        .sidebar ul li i {
+            margin-right: 10px;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c2c2c;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .header .search-bar input {
+            width: 40%;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .header .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .header .user-info i {
+            margin-right: 10px;
+        }
+        .header .user-info span {
+            margin-right: 10px;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content h3 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group .file-upload {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group .file-upload:hover {
+            background-color: #f9f9f9;
+        }
+        .form-group .file-upload i {
+            font-size: 50px;
+            color: #ccc;
+        }
+        .form-group .file-upload span {
+            display: block;
+            margin-top: 10px;
+            color: #ccc;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .form-actions button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-actions .submit-btn {
+            background-color: #007bff;
+            color: #fff;
+            margin-right: 10px;
+        }
+        .form-actions .cancel-btn {
+            background-color: #ccc;
+            color: #000;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="sidebar">
+   <h2>
+    Dashboard Admin
+   </h2>
+   <ul>
+    <li>
+     <i class="fas fa-compass">
+     </i>
+     Discover
+    </li>
+    <li>
+     <i class="fas fa-users">
+     </i>
+     Users
+    </li>
+    <li>
+     <i class="fas fa-box">
+     </i>
+     Your Packages
+    </li>
+    <li>
+     <i class="fas fa-hotel">
+     </i>
+     Hotel
+    </li>
+    <li class="active">
+     <i class="fas fa-car">
+     </i>
+     Rental
+    </li>
+    <li>
+     <i class="fas fa-calendar-alt">
+     </i>
+     Booking
+    </li>
+    <li>
+     <i class="fas fa-bell">
+     </i>
+     Notification
+    </li>
+    <li>
+     <i class="fas fa-cog">
+     </i>
+     Settings
+    </li>
+    <li>
+     <i class="fas fa-sign-out-alt">
+     </i>
+     Log Out
+    </li>
+   </ul>
+  </div>
+  <div class="main-content">
+   <div class="header">
+    <div class="logo">
+     <img alt="Logo" height="40" src="https://storage.googleapis.com/a1aa/image/XIJy2ZWjepyFCKO2IXmUvTmHf8LyLnczNYWNH3iCQB4zMLwTA.jpg" width="40"/>
+    </div>
+    <div class="search-bar">
+     <input placeholder="Search" type="text"/>
+    </div>
+    <div class="user-info">
+     <i class="fas fa-user-circle">
+     </i>
+     <span>
+      Amanda
+     </span>
+     <span>
+      Admin
+     </span>
+    </div>
+   </div>
+   <div class="content">
+    <h3>
+     Add New Rentals
+    </h3>
+    <div class="form-group">
+     <label for="vehicle-name">
+      Vehicle Name
+     </label>
+     <input id="vehicle-name" placeholder="Vehicle Name" type="text"/>
+    </div>
+    <div class="form-group">
+     <label for="rental-price">
+      Rental Price
+     </label>
+     <input id="rental-price" placeholder="Rental Price/day" type="text"/>
+    </div>
+    <div class="form-group">
+     <label for="type-vehicle">
+      Type Vehicle
+     </label>
+     <input id="type-vehicle" placeholder="Type Vehicle" type="text"/>
+    </div>
+    <div class="form-group">
+     <label for="upload-image">
+      Upload Vehicle image here
+     </label>
+     <div class="file-upload">
+      <i class="fas fa-cloud-upload-alt">
+      </i>
+      <span>
+       Choose a file or drag &amp; drop it here
+      </span>
+     </div>
+    </div>
+    <div class="form-actions">
+     <button class="submit-btn">
+      Submit
+     </button>
+     <button class="cancel-btn">
+      Cancel
+     </button>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

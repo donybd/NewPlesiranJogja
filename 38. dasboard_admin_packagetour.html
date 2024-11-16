@@ -1,0 +1,474 @@
+<html>
+ <head>
+  <title>
+   Dashboard Admin packagetour
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .sidebar {
+            width: 250px;
+            background-color:#fff;
+            color:#000;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px;
+            text-align: left;
+            padding-left: 30px;
+        }
+        .sidebar ul li:hover {
+            background-color:#fff;
+            cursor: pointer;
+        }
+        .sidebar ul li i {
+            margin-right: 10px;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .header {
+            background-color:#000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header input[type="text"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        .header .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .header .user-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .header .user-info span {
+            margin-right: 10px;
+        }
+        .table-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .table-container h2 {
+            margin-bottom: 20px;
+        }
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-container table, .table-container th, .table-container td {
+            border: 1px solid #ddd;
+        }
+        .table-container th, .table-container td {
+            padding: 10px;
+            text-align: left;
+        }
+        .table-container th {
+            background-color: #f2f2f2;
+        }
+        .table-container td img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+        .table-container .actions i {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .table-container .actions i:hover {
+            color: #007bff;
+        }
+        .add-new-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+        }
+        .add-new-btn:hover {
+            background-color: #0056b3;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="sidebar">
+   <h2>
+    Dashboard Admin
+   </h2>
+   <ul>
+    <li>
+     <i class="fas fa-compass">
+     </i>
+     Discover
+    </li>
+    <li>
+     <i class="fas fa-users">
+     </i>
+     Users
+    </li>
+    <li style="background-color: #575757;">
+     <i class="fas fa-map">
+     </i>
+     Tour Packages
+    </li>
+    <li>
+     <i class="fas fa-hotel">
+     </i>
+     Hotel
+    </li>
+    <li>
+     <i class="fas fa-car">
+     </i>
+     Rental
+    </li>
+    <li>
+     <i class="fas fa-book">
+     </i>
+     Booking
+    </li>
+    <li>
+     <i class="fas fa-bell">
+     </i>
+     Notification
+    </li>
+    <li>
+     <i class="fas fa-cog">
+     </i>
+     Settings
+    </li>
+    <li>
+     <i class="fas fa-sign-out-alt">
+     </i>
+     Log Out
+    </li>
+   </ul>
+  </div>
+  <div class="content">
+   <div class="header">
+    <div class="logo">
+     <img alt="Logo" height="40" src="aset/logo.png" width="100"/>
+     <input placeholder="Search" type="text"/>
+    </div>
+    <div class="user-info">
+     <img alt="User profile picture" height="40" src="aset/foto.webp" width="40"/>
+     <span>
+      Ammanda
+     </span>
+     <span>
+      Admin
+     </span>
+     <i class="fas fa-caret-down">
+     </i>
+    </div>
+   </div>
+   <div class="table-container">
+    <h2>
+     All Tour Packages
+    </h2>
+    <button class="add-new-btn">
+     Add New
+     <i class="fas fa-plus">
+     </i>
+    </button>
+    <table>
+     <thead>
+      <tr>
+       <th>
+        Tour Images
+       </th>
+       <th>
+        Tour Name
+       </th>
+       <th>
+        Price
+       </th>
+       <th>
+        No. Of Days
+       </th>
+       <th>
+        View
+       </th>
+       <th>
+        Edit
+       </th>
+       <th>
+        Delete
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        <img alt="Prambanan Temple Tour" height="50" src="https://storage.googleapis.com/a1aa/image/34PS0veW4n0KFyuenQAk0eo0fJFWe87NnMbXe7ZHB6svG197E.jpg" width="50"/>
+       </td>
+       <td>
+        Prambanan Temple Tour
+       </td>
+       <td>
+        2.000.000 IDR
+       </td>
+       <td>
+        3 days
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Obelix Sea View Tour" height="50" src="https://storage.googleapis.com/a1aa/image/XE3TywkxVU7cKZRNgpL2UxbGVxO2mTNint7D7urzKlbH197E.jpg" width="50"/>
+       </td>
+       <td>
+        Obelix Sea View Tour
+       </td>
+       <td>
+        2.500.000 IDR
+       </td>
+       <td>
+        4 days
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Plaosan Temple Tour" height="50" src="https://storage.googleapis.com/a1aa/image/G6i6rFi0pcabDBdHprfYKMME025zEP4fRS7ydo9ugH4jU3vTA.jpg" width="50"/>
+       </td>
+       <td>
+        Plaosan Temple Tour
+       </td>
+       <td>
+        2.000.000 IDR
+       </td>
+       <td>
+        2 days
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Parangtritis Beach Tourism" height="50" src="https://storage.googleapis.com/a1aa/image/Bsms8dMXl3Z6Ft6Y9Qps2kIv6FiP7Hw9z52dPYAbNXDI197E.jpg" width="50"/>
+       </td>
+       <td>
+        Parangtritis Beach Tourism
+       </td>
+       <td>
+        3.000.000 IDR
+       </td>
+       <td>
+        3 days
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Brekis Cliff Tour" height="50" src="https://storage.googleapis.com/a1aa/image/Ez8ojp2nSa7vI930ARd5iapQe03fDzuV7ts5JY246PUeoufOB.jpg" width="50"/>
+       </td>
+       <td>
+        Brekis Cliff Tour
+       </td>
+       <td>
+        4.000.000 IDR
+       </td>
+       <td>
+        3 days
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Ratu Boko Tourism" height="50" src="https://storage.googleapis.com/a1aa/image/WheGyLfieCMfgS4g3ggYyRCyHwfWOFXV1g7KjHmcmG1hk6e7E.jpg" width="50"/>
+       </td>
+       <td>
+        Ratu Boko Tourism
+       </td>
+       <td>
+        3.500.000 IDR
+       </td>
+       <td>
+        4 days
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Borobudur Temple Tour" height="50" src="https://storage.googleapis.com/a1aa/image/NNeeVuuJEeR1FJe5nHf2DjKTxiS84c5BoRlyxmxJKJdNk6e7E.jpg" width="50"/>
+       </td>
+       <td>
+        Borobudur Temple Tour
+       </td>
+       <td>
+        4.500.000 IDR
+       </td>
+       <td>
+        5 days
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Obelix Hills Tour" height="50" src="https://storage.googleapis.com/a1aa/image/cpL9acmFoXLUHZkydgoSEoKDJ8XUhvTyrpctds6axaeNq73JA.jpg" width="50"/>
+       </td>
+       <td>
+        Obelix Hills Tour
+       </td>
+       <td>
+        3.000.000 IDR
+       </td>
+       <td>
+        3 days
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Mendut Temple Tour" height="50" src="https://storage.googleapis.com/a1aa/image/4QVw01K2YGLsDFwOlJACatbCqtYvOBcQm1gQ52SlmwXG197E.jpg" width="50"/>
+       </td>
+       <td>
+        Mendut Temple Tour
+       </td>
+       <td>
+        2.000.000 IDR
+       </td>
+       <td>
+        2 days
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+ </body>
+</html>

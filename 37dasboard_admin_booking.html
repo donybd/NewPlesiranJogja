@@ -1,0 +1,654 @@
+<html>
+ <head>
+  <title>
+   Dashboard Admin Booking
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            position: fixed;
+            height: 100%;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            padding-top: 20px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        .sidebar ul li a:hover {
+            background-color: #f0f0f0;
+        }
+        .sidebar ul li.active a {
+            background-color: #e0e0e0;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3a3a3a;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header .search-bar {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .header .search-bar input {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+        .header .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .header .user-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .header .user-info .name {
+            margin-right: 10px;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .table th, .table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .table th {
+            background-color: #f0f0f0;
+        }
+        .table .status {
+            font-weight: bold;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        .table .status.reserved {
+            background-color: #28a745;
+        }
+        .table .status.canceled {
+            background-color: #dc3545;
+        }
+        .table .action a {
+            color: #dc3545;
+            text-decoration: none;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="sidebar">
+   <h2>
+    Dashboard Admin
+   </h2>
+   <ul>
+    <li>
+     <a href="#">
+      <i class="fas fa-compass">
+      </i>
+      Discover
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <i class="fas fa-users">
+      </i>
+      Users
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <i class="fas fa-suitcase">
+      </i>
+      Tour Packages
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <i class="fas fa-hotel">
+      </i>
+      Hotel
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <i class="fas fa-car">
+      </i>
+      Rental
+     </a>
+    </li>
+    <li class="active">
+     <a href="#">
+      <i class="fas fa-book">
+      </i>
+      Booking
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <i class="fas fa-bell">
+      </i>
+      Notification
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <i class="fas fa-cog">
+      </i>
+      Settings
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <i class="fas fa-sign-out-alt">
+      </i>
+      Log Out
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div class="main-content">
+   <div class="header">
+    <div class="logo">
+     <img alt="Company logo with a stylized globe and company name" height="40" src="aset/logo.png" width="100"/>
+     <div class="search-bar">
+      <input placeholder="Search" type="text"/>
+     </div>
+    </div>
+    <div class="user-info">
+     <img alt="User profile picture of a woman with short hair" height="40" src="aset/foto.webp" width="40"/>
+     <div class="name">
+      Ammanda admin
+     </div>
+    </div>
+   </div>
+   <div class="content">
+    <h2>
+     All Bookings
+    </h2>
+    <table class="table">
+     <thead>
+      <tr>
+       <th>
+        User Name
+       </th>
+       <th>
+        Type
+       </th>
+       <th>
+        Title
+       </th>
+       <th>
+        Price
+       </th>
+       <th>
+        Order Date
+       </th>
+       <th>
+        Status
+       </th>
+       <th>
+        Action
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        Dony Benaya Dinova
+       </td>
+       <td>
+        Tour Packages
+       </td>
+       <td>
+        Prambanan Temple Tour
+       </td>
+       <td>
+        2.000.000 IDR
+       </td>
+       <td>
+        10 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Marudut Dearman Damanik
+       </td>
+       <td>
+        Rental
+       </td>
+       <td>
+        Porsche GT4-RS
+       </td>
+       <td>
+        120.000 IDR
+       </td>
+       <td>
+        11 Nov, 2024
+       </td>
+       <td>
+        <span class="status canceled">
+         Canceled
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Rega Nurcahya
+       </td>
+       <td>
+        Hotel
+       </td>
+       <td>
+        Hotel Tentrem Yogyakarta
+       </td>
+       <td>
+        7.047.560 IDR
+       </td>
+       <td>
+        12 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Siti Aisyah
+       </td>
+       <td>
+        Tour Packages
+       </td>
+       <td>
+        Obelix Sea View Tour
+       </td>
+       <td>
+        2.500.000 IDR
+       </td>
+       <td>
+        13 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Siti Aulia Rahmahadi
+       </td>
+       <td>
+        Rental
+       </td>
+       <td>
+        Kawasaki ZX-10r
+       </td>
+       <td>
+        120.000 IDR
+       </td>
+       <td>
+        14 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        John Doe
+       </td>
+       <td>
+        Hotel
+       </td>
+       <td>
+        Marriott Hotel
+       </td>
+       <td>
+        5.000.000 IDR
+       </td>
+       <td>
+        15 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Jane Smith
+       </td>
+       <td>
+        Tour Packages
+       </td>
+       <td>
+        Borobudur Sunrise Tour
+       </td>
+       <td>
+        3.000.000 IDR
+       </td>
+       <td>
+        16 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Michael Johnson
+       </td>
+       <td>
+        Rental
+       </td>
+       <td>
+        BMW M3
+       </td>
+       <td>
+        150.000 IDR
+       </td>
+       <td>
+        17 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Emily Davis
+       </td>
+       <td>
+        Hotel
+       </td>
+       <td>
+        Hilton Hotel
+       </td>
+       <td>
+        6.000.000 IDR
+       </td>
+       <td>
+        18 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Chris Brown
+       </td>
+       <td>
+        Tour Packages
+       </td>
+       <td>
+        Mount Bromo Tour
+       </td>
+       <td>
+        4.000.000 IDR
+       </td>
+       <td>
+        19 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Jessica Wilson
+       </td>
+       <td>
+        Rental
+       </td>
+       <td>
+        Mercedes-Benz S-Class
+       </td>
+       <td>
+        200.000 IDR
+       </td>
+       <td>
+        20 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        David Martinez
+       </td>
+       <td>
+        Hotel
+       </td>
+       <td>
+        Hyatt Regency
+       </td>
+       <td>
+        7.500.000 IDR
+       </td>
+       <td>
+        21 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Sarah Lee
+       </td>
+       <td>
+        Tour Packages
+       </td>
+       <td>
+        Komodo Island Tour
+       </td>
+       <td>
+        5.500.000 IDR
+       </td>
+       <td>
+        22 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        James Anderson
+       </td>
+       <td>
+        Rental
+       </td>
+       <td>
+        Audi R8
+       </td>
+       <td>
+        180.000 IDR
+       </td>
+       <td>
+        23 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Linda Thompson
+       </td>
+       <td>
+        Hotel
+       </td>
+       <td>
+        Ritz-Carlton
+       </td>
+       <td>
+        8.000.000 IDR
+       </td>
+       <td>
+        24 Nov, 2024
+       </td>
+       <td>
+        <span class="status reserved">
+         Reserved
+        </span>
+       </td>
+       <td class="action">
+        <a href="#">
+         Delete
+        </a>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+ </body>
+</html>

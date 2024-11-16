@@ -1,0 +1,246 @@
+<html>
+ <head>
+  <title>
+   Dashboard update user
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            color: #000;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px 20px;
+            cursor: pointer;
+            background-color: #fff;
+            color: #000;
+        }
+        .sidebar ul li:hover, .sidebar ul li.active {
+            background-color: #444;
+            color: #fff;
+        }
+        .sidebar ul li i {
+            margin-right: 10px;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .header {
+            background-color: #2c2c2c;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo-search {
+            display: flex;
+            align-items: center;
+        }
+        .header .search-bar {
+            background-color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 300px;
+            margin-left: 10px;
+        }
+        .header .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .header .user-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .header .user-info .name {
+            margin-right: 10px;
+        }
+        .header .user-info .dropdown {
+            cursor: pointer;
+        }
+        .update-user {
+            background-color: #fff;
+            padding:50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .update-user h3 {
+            margin-bottom: 20px;
+        }
+        .update-user label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        .update-user input[type="text"], .update-user input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .update-user .file-upload {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .update-user .file-upload i {
+            font-size: 50px;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+        .update-user .buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .update-user .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .update-user .buttons .update-btn {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .update-user .buttons .cancel-btn {
+            background-color: #ccc;
+            color: #000;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="sidebar">
+   <h2>
+    Admin Dashboard
+   </h2>
+   <ul>
+    <li>
+     <i class="fas fa-compass">
+     </i>
+     Discover
+    </li>
+    <li class="active">
+     <i class="fas fa-user">
+     </i>
+     Users
+    </li>
+    <li>
+     <i class="fas fa-box">
+     </i>
+     Tour Packages
+    </li>
+    <li>
+     <i class="fas fa-hotel">
+     </i>
+     Hotel
+    </li>
+    <li>
+     <i class="fas fa-car">
+     </i>
+     Rental
+    </li>
+    <li>
+     <i class="fas fa-book">
+     </i>
+     Booking
+    </li>
+    <li>
+     <i class="fas fa-bell">
+     </i>
+     Notification
+    </li>
+    <li>
+     <i class="fas fa-cog">
+     </i>
+     Settings
+    </li>
+    <li>
+     <i class="fas fa-sign-out-alt">
+     </i>
+     Log Out
+    </li>
+   </ul>
+  </div>
+  <div class="content">
+   <div class="header">
+    <div class="logo-search">
+     <img alt="Logo" height="40" src="aset/logo.png" width="100"/>
+     <input class="search-bar" placeholder="Search" type="text"/>
+    </div>
+    <div class="user-info">
+     <img alt="User profile picture" height="40" src="aset/foto.webp" width="40"/>
+     <span class="name">
+      Ammanda
+     </span>
+     <span class="dropdown">
+      Admin
+      <i class="fas fa-caret-down">
+      </i>
+     </span>
+    </div>
+   </div>
+   <div class="update-user">
+    <h3>
+     Update User
+    </h3>
+    <label for="username">
+     User Name
+    </label>
+    <input id="username" type="text" value="Dony Benaya Dinova"/>
+    <label for="email">
+     Email Address
+    </label>
+    <input id="email" type="email" value="donybenaya@gmail.com"/>
+    <label for="contact">
+     Contact Number
+    </label>
+    <input id="contact" type="text" value="+802-370-2430"/>
+    <label for="upload">
+     Upload user image here
+    </label>
+    <div class="file-upload">
+     <i class="fas fa-cloud-upload-alt">
+     </i>
+     <p>
+      Choose a file or drag &amp; drop it here
+     </p>
+    </div>
+    <div class="buttons">
+     <button class="update-btn">
+      Update
+     </button>
+     <button class="cancel-btn">
+      Cancel
+     </button>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

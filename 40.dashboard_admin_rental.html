@@ -1,0 +1,395 @@
+<html>
+ <head>
+  <title>
+   Dashboard Admin packagetour
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .sidebar {
+            width: 250px;
+            background-color:#fff;
+            color:#000;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px;
+            text-align: left;
+            padding-left: 30px;
+        }
+        .sidebar ul li:hover {
+            background-color:#fff;
+            cursor: pointer;
+        }
+        .sidebar ul li i {
+            margin-right: 10px;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .header {
+            background-color:#000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header input[type="text"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        .header .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .header .user-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .header .user-info span {
+            margin-right: 10px;
+        }
+        .table-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .table-container h2 {
+            margin-bottom: 20px;
+        }
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-container table, .table-container th, .table-container td {
+            border: 1px solid #ddd;
+        }
+        .table-container th, .table-container td {
+            padding: 10px;
+            text-align: left;
+        }
+        .table-container th {
+            background-color: #f2f2f2;
+        }
+        .table-container td img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+        .table-container .actions i {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .table-container .actions i:hover {
+            color: #007bff;
+        }
+        .add-new-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+        }
+        .add-new-btn:hover {
+            background-color: #0056b3;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="sidebar">
+   <h2>
+    Dashboard Admin
+   </h2>
+   <ul>
+    <li>
+     <i class="fas fa-compass">
+     </i>
+     Discover
+    </li>
+    <li>
+     <i class="fas fa-users">
+     </i>
+     Users
+    </li>
+    <li>
+     <i class="fas fa-map">
+     </i>
+     Tour Packages
+    </li>
+    <li>
+     <i class="fas fa-hotel">
+     </i>
+     Hotel
+    </li>
+    <li style="background-color: #575757;">
+     <i class="fas fa-car">
+     </i>
+     Rental
+    </li>
+    <li>
+     <i class="fas fa-book">
+     </i>
+     Booking
+    </li>
+    <li>
+     <i class="fas fa-bell">
+     </i>
+     Notification
+    </li>
+    <li>
+     <i class="fas fa-cog">
+     </i>
+     Settings
+    </li>
+    <li>
+     <i class="fas fa-sign-out-alt">
+     </i>
+     Log Out
+    </li>
+   </ul>
+  </div>
+  <div class="content">
+   <div class="header">
+    <div class="logo">
+     <img alt="Logo" height="40" src="aset/logo.png" width="100"/>
+     <input placeholder="Search" type="text"/>
+    </div>
+    <div class="user-info">
+     <img alt="User profile picture" height="40" src="aset/foto.webp" width="40"/>
+     <span>
+      Ammanda
+     </span>
+     <span>
+      Admin
+     </span>
+     <i class="fas fa-caret-down">
+     </i>
+    </div>
+   </div>
+   <div class="table-container">
+    <h2>
+     All Rental
+    </h2>
+    <button class="add-new-btn">
+     Add New
+     <i class="fas fa-plus">
+     </i>
+    </button>
+    <table>
+     <thead>
+      <tr>
+       <th>
+        Vehicle images
+       </th>
+       <th>
+        vehicle Name
+       </th>
+       <th>
+        Price
+       </th>
+       <th>
+        Type Vehicle
+       </th>
+       <th>
+        View
+       </th>
+       <th>
+        Edit
+       </th>
+       <th>
+        Delete
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        <img alt="Porsche GT4-RS" height="50" src="aset\image porsye.jpeg" width="50"/>
+       </td>
+       <td>
+        Porsche GT4-RS
+       </td>
+       <td>
+        120.000 IDR/days
+       </td>
+       <td>
+        car
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Kawasaki ZX-10r" height="50" src="aset\kawasaki.jpeg" width="50"/>
+       </td>
+       <td>
+        Kawasaki ZX-10r
+       </td>
+       <td>
+        120.000 IDR/days
+       </td>
+       <td>
+        Motorcycle
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="R1m" height="50" src="aset\rim.jpeg" width="50"/>
+       </td>
+       <td>
+        R1m
+       </td>
+       <td>
+        120.000 IDR/days
+       </td>
+       <td>
+        Motorcycle
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Toyota Innova" height="50" src="aset\toyota.jpeg" width="50"/>
+       </td>
+       <td>
+        Toyota Innova
+       </td>
+       <td>
+        120.000 IDR/days
+       </td>
+       <td>
+        car
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="Toyota Gr-Corolla" height="50" src="aset\toyota gr.jpeg" width="50"/>
+       </td>
+       <td>
+        Toyota Gr-Corolla
+       </td>
+       <td>
+        120.000 IDR/days
+       </td>
+       <td>
+        car
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <img alt="M3 Touring" height="50" src="aset\touring.jpeg" width="50"/>
+       </td>
+       <td>
+        M3 Touring
+       </td>
+       <td>
+        120.000 IDR/days
+       </td>
+       <td>
+        car
+       </td>
+       <td class="actions">
+        <i class="fas fa-eye">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-edit">
+        </i>
+       </td>
+       <td class="actions">
+        <i class="fas fa-trash">
+        </i>
+       </td>
+     </tbody>
+    </table>
+   </div>
+  </div>
+ </body>
+</html>

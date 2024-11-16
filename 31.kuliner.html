@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Culinary - Plesiran Jogja</title>
+    <!-- BOOTSRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/kuliner.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand me-auto" href="#">
+          <img src="./assets/img/logo.png" alt="Logo" width="172" height="60" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas bg-dark offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/img/logo.png" alt="Logo" width="172" height="60" /></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="1homepage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-lg-2" aria-current="page" href="2destination.html">Discover</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="10tour.html">Trip&Tour</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="18list-hotel.html">Hotel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="25rental.html">Rental</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/img/profile.jpg" alt="Profile" class="profile-image" /></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownProfilButton">
+            <li class="dropdown-item">
+              <i class="fa-regular fa-user"></i>
+              <a href="29profile.html">My Profile</a>
+            </li>
+            <hr />
+            <li class="dropdown-item">
+              <i class="fa-solid fa-file-invoice"></i>
+              <a href="30.myreservasi.html">My Reservation</a>
+            </li>
+            <hr />
+            <li class="dropdown-item">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <a href="0login.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- BANNER -->
+    <div class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="hero-overlay"></div>
+          </div>
+        </div>
+
+        <!-- SUB NAVBAR DISCOVER -->
+        <div class="row">
+          <div class="col-12 d-flex">
+            <div class="sub-navbar text-light d-flex align-items-center justify-content-center" style="width: 100%; max-width: 600px; height: 60px; margin-top: 80px; border-radius: 8px">
+              <ul class="nav d-flex justify-content-center flex-wrap flex-md-row flex-column">
+                <li class="nav-item d-flex align-items-center">
+                  <a class="nav-link active text-light d-flex align-items-center px-3 py-3" href="2destination.html">
+                    Destination
+                    <i class="las la-map ms-2"></i>
+                  </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                  <a class="nav-link text-light d-flex align-items-center px-3 py-3" href="4culinery.html">
+                    Culinary
+                    <i class="las la-utensils ms-2"></i>
+                  </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                  <a class="nav-link text-light d-flex align-items-center px-3 py-3" href="7budaya.html">
+                    Culture
+                    <i class="las la-globe ms-2"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- SUB NAVBAR END -->
+
+        <!-- JUDUL BANNER -->
+        <!-- <section class="hero-content text-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="text-start" style="display: inline-block; text-align: left">Yogyakarta is full of surprises, go explore!</h1>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <!-- JUDUL BANNER END -->
+      </div>
+    </div>
+
+    <!-- DISCOVER TITTLE -->
+    <section id="Destination" class="discover text-center py-5">
+      <div class="container">
+        <h2>Discover</h2>
+        <p>Delicious Eats, Without Limits</p>
+        <hr class="dashed-line" />
+      </div>
+    </section>
+    <!-- DISCOVER TITTLE END -->
+    <section class="list">
+      <div class="container">
+        <h2 class="judul-list">Food & Drink</h2>
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Kuliner\Gudeg.png" class="card-img-top" alt="Gudeg">
+                <div class="card-body">
+                  <h5 class="card-title">Gudeg</h5>
+                  <p class="card-text">Gudeg is a traditional Yogyakarta dish made from young jackfruit...</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Kuliner\es dawet ayu.png" class="card-img-top" alt="Dawet Ayu Ice">
+                <div class="card-body">
+                  <h5 class="card-title">Dawet Ayu Ice</h5>
+                  <p class="card-text">Yogyakarta's typical ice dawet ayu is a refreshing traditional drink...</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Kuliner\kopi joss.png" class="card-img-top" alt="Joss Coffe">
+                <div class="card-body">
+                  <h5 class="card-title">Joss Coffe</h5>
+                  <p class="card-text">Joss coffee is a unique black coffee from Yogyakarta because...</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets/img/Kuliner/wajik.png" class="card-img-top" alt="Wajik">
+                <div class="card-body">
+                  <h5 class="card-title">Wajik</h5>
+                  <p class="card-text">Wajik is a processed food made from boiled sticky rice and mixed with...</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Kuliner\kipo.png" class="card-img-top" alt="Kipo">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">Kipo is a traditional food originating from the Kotagede area, Yogyakarta...</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Kuliner\geplak.png" class="card-img-top" alt="Geplak">
+                <div class="card-body">
+                  <h5 class="card-title">Geplak</h5>
+                  <p class="card-text">Geplak is a traditional Indonesian food originating from the Bantul area...</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Kuliner\yangko.png" class="card-img-top" alt="yangko">
+                <div class="card-body">
+                  <h5 class="card-title">yangko</h5>
+                  <p class="card-text">yangko is a traditional food typical of Yogyakarta, especially popular in the...</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Kuliner\gatot.png" class="card-img-top" alt="Gatot">
+                <div class="card-body">
+                  <h5 class="card-title">Gatot</h5>
+                  <p class="card-text">Gatot is a food made from cassava (cassava). Gatot and tiwul...</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Kuliner\tiwul.png" class="card-img-top" alt="Tiwul">
+                <div class="card-body">
+                  <h5 class="card-title">Tiwul</h5>
+                  <p class="card-text">Tiwul is a food made from white cassava, while gatot is made...</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Kuliner\Bakphia.png" class="card-img-top" alt="Bakpia Pathok">
+                <div class="card-body">
+                  <h5 class="card-title">Bakpia Pathok</h5>
+                  <p class="card-text">Bakpia Pathok is a typical Yogyakarta food which is famous as a souvenir...</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+          </div>
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow"></div>
+            <div class="swiper-button-next slider-arrow"></div>
+          </div>
+        </div>
+        <h2 class="judul-list">Find Gift Here</h2>
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Oleh Oleh\Tugu Jogja steamed bakpia.png" class="card-img-top" alt="Tugu Jogja bakpia">
+                <div class="card-body">
+                  <h5 class="card-title">Tugu Jogja bakpia</h5>
+                  <p class="card-text">Jl. Mayor Suryotomo No.25, Ngupasan, Kec Gondomanan, Yogyakarta City, Yogyakarta Special Region 55121</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Oleh Oleh\Beringharjo Market.png" class="card-img-top" alt="Beringharjo Market">
+                <div class="card-body">
+                  <h5 class="card-title">Beringharjo Market</h5>
+                  <p class="card-text">Jl. Margo Mulyo No.16, Ngupasan, Kec Gondomanan, Yogyakarta City, Special Region of Yogyakarta 55122</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Oleh Oleh\The house of raminten.png" class="card-img-top" alt="he house of raminten">
+                <div class="card-body">
+                  <h5 class="card-title">The house of raminten</h5>
+                  <p class="card-text">Jl. Faridan M Noto No.7 Kec Gondokusuman,Yogyakarta City, Yogyakarta Special Region 55224</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Oleh Oleh\bu tini.png" class="card-img-top" alt="Typical Jogja souvenir">
+                <div class="card-body">
+                  <h5 class="card-title">Typical Jogja souvenir </h5>
+                  <p class="card-text">Jl. Mataram No. 194, Suryatmajan,Kec Danurejan, Yogyakarta City, Yogyakarta Special Region 55213</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Oleh Oleh\Dagelan Center.png" class="card-img-top" alt="Dagelan Center">
+                <div class="card-body">
+                  <h5 class="card-title">Dagelan Center</h5>
+                  <p class="card-text">Jalan Malioboro Number 52-58 LG Floor Malioboro Yogyakarta City, Yogyakarta Special Region 55001</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets/img/Oleh Oleh/Bakpia Factory Pathok 25.png" class="card-img-top" alt="Bakpia Factory Pathok">
+                <div class="card-body">
+                  <h5 class="card-title">Bakpia Factory Pathok</h5>
+                  <p class="card-text">Sanggrahan Pathuk, Jl. Karel Sasuit Tubun NG/I Yogyakarta City, Yogyakarta Special Area 55261</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Oleh Oleh\Jogja Bakpia Mbah Gito's.png" class="card-img-top" alt="Bakpia Mbah Gito's">
+                <div class="card-body">
+                  <h5 class="card-title">Bakpia Mbah Gito's</h5>
+                  <p class="card-text">Jl. Mataram No. 51, Suryatmajan,Kec.Danurejan, Yogyakarta City, Yogyakarta Special Region 55121</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Oleh Oleh\Special Jogja BETTA.png" class="card-img-top" alt="Special Jogja BETTA">
+                <div class="card-body">
+                  <h5 class="card-title">Special Jogja BETTA</h5>
+                  <p class="card-text">l. Mataram No. 43, Suryatmajan,Kec.Danurejan, Yogyakarta City, Yogyakarta Special Region 55213</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Oleh Oleh\Blessing Shop jogja.png" class="card-img-top" alt="Blessing Shop jogja">
+                <div class="card-body">
+                  <h5 class="card-title">Blessing Shop jogja</h5>
+                  <p class="card-text">Jl. KH. Ahmad Dahlan No.20, RW.6 Kec.Gondomanan, Yogyakarta City, Yogyakarta Special Region 55122</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\Oleh Oleh\Alive shop Sourvenir.png" class="card-img-top" alt="Alive shop Sourvenir">
+                <div class="card-body">
+                  <h5 class="card-title">Alive shop Sourvenir</h5>
+                  <p class="card-text">Jl. Margo Mulyo No.62, Ngupasan Kec.Gondomanan, Yogyakarta City, Special Region of Yogyakarta 55122</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+          </div>
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow"></div>
+            <div class="swiper-button-next slider-arrow"></div>
+          </div>
+        </div>
+        <h2 class="judul-list">Place to eat</h2>
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\restaurant\Gudeg Yu Djum.png" class="card-img-top" alt="Gudeg Yu Djum ">
+                <div class="card-body">
+                  <h5 class="card-title">Gudeg Yu Djum </h5>
+                  <p class="card-text">Jl. Sosrowijayan No.9 Gedong Tengen, Yogyakarta City, Yogyakarta Special Region 55271</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\restaurant\SGPC Bu Wiryo 1959.png" class="card-img-top" alt="SGPC Bu Wiryo  1959">
+                <div class="card-body">
+                  <h5 class="card-title">SGPC Bu Wiryo  1959</h5>
+                  <p class="card-text">Jl. Agro No.10, Kocoran, Caturtunggal, Kec. Depok, Sleman Regency, Yogyakarta Special Region 55281</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\restaurant\Warung Klengan.png" class="card-img-top" alt="Warung Klengan">
+                <div class="card-body">
+                  <h5 class="card-title">Warung Klengan</h5>
+                  <p class="card-text">Jl. Patangpuluhan No.28, Patangpuluhan, Wirobrajan, Yogyakarta City, Special Region of Yogyakarta 55251</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\restaurant\Bu Ageng's Warung.png" class="card-img-top" alt="Bu Ageng's Warung">
+                <div class="card-body">
+                  <h5 class="card-title">Bu Ageng's Warung</h5>
+                  <p class="card-text">Jl. Kartini No. 8, Terban, Kec. Gondokusuman Yogyakarta City Yogyakarta Special Region 55223</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\restaurant\Warung Makan Cak Koting.png" class="card-img-top" alt="Warung Makan Koting">
+                <div class="card-body">
+                  <h5 class="card-title">Warung Makan Koting</h5>
+                  <p class="card-text">Jl. Doctor Sutomo No.57, Bausasran, Kec. Danurejan,Yogyakarta Special Region 55211</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\restaurant\Moerni 78.png" class="card-img-top" alt="Moerni 78">
+                <div class="card-body">
+                  <h5 class="card-title">Moerni 78</h5>
+                  <p class="card-text">Jl. Craftsman No. 45, Tegal Panggung, Kec. Danurejan, Yogyakarta Yogyakarta Special Region 55212</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\restaurant\ViaVia Jogja.png" class="card-img-top" alt="ViaVia Jogja">
+                <div class="card-body">
+                  <h5 class="card-title">ViaVia Jogja</h5>
+                  <p class="card-text">Jl. Prawirotaman No.30, Brontokusuman, Kec. Mergangsan Yogyakarta Special Region 55153</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\restaurant\Warung Nguri uri.png" class="card-img-top" alt="Warung Nguri uri">
+                <div class="card-body">
+                  <h5 class="card-title">Warung Nguri uri</h5>
+                  <p class="card-text">Jl. Sosrowijayan No.9, Sosromenduran, Gedong Tengen,Daerah Istimewa Yogyakarta 55271</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\restaurant\Warung Makan Spoed.png" class="card-img-top" alt="Warung Makan Spoed">
+                <div class="card-body">
+                  <h5 class="card-title">Warung Makan Spoed</h5>
+                  <p class="card-text">Jl. Ibu Ruswo No.32, Prawirodirjan, Kec. Gondomanan Daerah Istimewa Yogyakarta 55131</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+            <div class="swiper-slide col-md-6">
+              <div class="card mb-4">
+                <img src="assets\img\restaurant\tengkleng gajah jogja.png" class="card-img-top" alt="tengkleng gajah jogja">
+                <div class="card-body">
+                  <h5 class="card-title">tengkleng gajah jogja.</h5>
+                  <p class="card-text">Jl. Kaliurang No.Km.9, RT.04/RW.3 Kec. Ngaglik, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55582</p>
+                </div>
+                <div class="card-footer text-muted">Read More</div>
+              </div>
+            </div>
+          </div>
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow"></div>
+            <div class="swiper-button-next slider-arrow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="text-center">
+          <img src="assets/img/logo2.png" alt="Plesiran Jogja Logo" class="footer-logo" />
+          <div class="mt-1">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="2destination.html">Discovery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="10tour.html">Trip</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="25rental.html">Rent</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="27aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="28contactus.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <i class="bi bi-envelope me-2"></i>
+              plesiranjogja@gmail.com
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-telephone me-2"></i>
+              0812345678
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-geo-alt me-2"></i>
+              Sleman, Yogyakarta
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="copyright">Copyright © Kel.4B 2024 - All rights Reserved</div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END-->
+
+    <!-- BOOTSTRAP JS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".tranding-slider", {
+      spaceBetween: 10,
+      grabCursor: true,
+      slidesPerView: "auto",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
+  </body>
+</html>
